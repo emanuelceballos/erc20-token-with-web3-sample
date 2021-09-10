@@ -1,10 +1,11 @@
-# simple-web3-sample
+# ERC20 token with a simple Web3 UI
 
-A simple Web3 sample project connecting to the Ethereum network
+This project contains an ERC20 token implementation deployable to the Ethereum network.
+It has also a simple UI to allow the user to either send ETH or the custom token.
 
 ## Dependencies
 
-### Node version
+### Node
 
 > 12.22.6
 
@@ -19,12 +20,15 @@ npm install -g truffle
 ```sh
 npm install
 
-# You need to be connected to the Ethereum network to run these commands
+# Verify that your contracts are OK
 truffle build
+
+# Connect to an Ethereum test network
+# before running the following command.
 truffle migrate
 
 npm run start
 ```
 
 > * Connect a provider such as Metamask
-> * Select an Ethereum test network like Rinkeby Test Network
+> * Select an Ethereum test network like Ganache, Rinkeby or Ropsten Test Network
